@@ -16,23 +16,23 @@
 </head>
 <body>
     <div id="app" class="container-fluid">
-        <h1 align="center">123</h1>
+        <h1 align="center">花椰菜爭霸戰！</h1>
         <div class="row">
-          <div class="col-md-2" style="text-align: center; background-color:lavender;">.col-sm-4</div>
-          <div class="col-md-2" style="text-align: center; background-color:lavenderblush;">.col-sm-4</div>
-          <div class="col-md-2" style="text-align: center; background-color:lavender;">.col-sm-4</div>
-          <div class="col-md-2" style="text-align: center; background-color:lavenderblush;">.col-sm-4</div>
-          <div class="col-md-2" style="text-align: center; background-color:lavender;">.col-sm-4</div>
-          <div class="col-md-2" style="text-align: center; background-color:lavenderblush;">.col-sm-4</div>
+          <div class="col-md-2" style="text-align: center; background-color:lavender;">1.山下智久</div>
+          <div class="col-md-2" style="text-align: center; background-color:lavenderblush;">2.彭于晏</div>
+          <div class="col-md-2" style="text-align: center; background-color:lavender;">3.孔劉</div>
+          <div class="col-md-2" style="text-align: center; background-color:lavenderblush;">4.鹿晗</div>
+          <div class="col-md-2" style="text-align: center; background-color:lavender;">5.陳偉霆</div>
+          <div class="col-md-2" style="text-align: center; background-color:lavenderblush;">6.阿米爾·汗</div>
         </div>
         
         <div class="row">
-            <div class="col-md-2">{{randomNum.n1}}</div>
-            <div class="col-md-2">{{randomNum.n2}}</div>
-            <div class="col-md-2">{{randomNum.n3}}</div>
-            <div class="col-md-2">{{randomNum.n4}}</div>
-            <div class="col-md-2">{{randomNum.n5}}</div>
-            <div class="col-md-2">{{randomNum.n6}}</div>
+            <div class="col-md-2 text-center" v-bind:style="{ color: isWinner.n1}"><h2>{{randomNum.n1}}</h2></div>
+            <div class="col-md-2 text-center" v-bind:style="{ color: isWinner.n2}"><h2>{{randomNum.n2}}</h2></div>
+            <div class="col-md-2 text-center" v-bind:style="{ color: isWinner.n3}"><h2>{{randomNum.n3}}</h2></div>
+            <div class="col-md-2 text-center" v-bind:style="{ color: isWinner.n4}"><h2>{{randomNum.n4}}</h2></div>
+            <div class="col-md-2 text-center" v-bind:style="{ color: isWinner.n5}"><h2>{{randomNum.n5}}</h2></div>
+            <div class="col-md-2 text-center" v-bind:style="{ color: isWinner.n6}"><h2>{{randomNum.n6}}</h2></div>
         </div>
     </div>
     <script src="js/home.js"></script>

@@ -2,14 +2,15 @@ var myObject = new Vue({
     el: '#app',
     data: {
         intervalId: {n1:null,n2:null,n3:null,n4:null,n5:null,n6:null},
-        randomNum: {n1:'',n2:'',n3:'',n4:'',n5:'',n6:''}
+        randomNum: {n1:'',n2:'',n3:'',n4:'',n5:'',n6:''},
+        isWinner: {n1:'black',n2:'black',n3:'black',n4:'black',n5:'black',n6:'black'}
     },
     created: function () {
         window.addEventListener('keydown', this.onkey)
       },
     methods: {
         onkey(event){
-            console.log(event.keyCode);
+            //console.log(event.keyCode);
             if(event.keyCode === 49) 
                 random('n1');
 
@@ -43,7 +44,29 @@ var myObject = new Vue({
       setTimeout(function() {
         clearInterval(myObject.intervalId[key]);
         myObject.intervalId[key] = null;
+
+        var isFullChanged = true;
+        var topValue = 0;
+        var topKey = 'key';
+        for (var k in myObject.randomNum){
+            isFullChanged = isFullChanged && myObject.randomNum[k] != '';
+            if(myObject.randomNum[k] >= topValue){
+                topValue = myObject.randomNum[k];
+                topKey = k;
+            }
+        }
+        if(isFullChanged){
+            
+            for (var k in myObject.randomNum){
+                if(k === topKey)
+                    myObject.isWinner[k] = 'red';
+                else
+                    myObject.isWinner[k] = 'black';
+            }
+        }
+        
     }, 3600);
+
   }
 
  
