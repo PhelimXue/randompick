@@ -45,24 +45,19 @@ var myObject = new Vue({
         clearInterval(myObject.intervalId[key]);
         myObject.intervalId[key] = null;
 
-        var isFullChanged = true;
         var topValue = 0;
         var topKey = 'key';
         for (var k in myObject.randomNum){
-            isFullChanged = isFullChanged && myObject.randomNum[k] != '';
             if(myObject.randomNum[k] >= topValue){
                 topValue = myObject.randomNum[k];
                 topKey = k;
             }
         }
-        if(isFullChanged){
-            
-            for (var k in myObject.randomNum){
-                if(k === topKey)
-                    myObject.isWinner[k] = 'red';
-                else
-                    myObject.isWinner[k] = 'black';
-            }
+        for (var k in myObject.randomNum){
+            if(k === topKey)
+                myObject.isWinner[k] = 'red';
+            else
+                myObject.isWinner[k] = 'black';
         }
         
     }, 3600);
