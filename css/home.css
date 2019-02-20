@@ -1,0 +1,7 @@
+.pickName {
+    font-size: x-large;
+    font-weight:bold;
+}
+[v-cloak]{
+    display: none;
+}
