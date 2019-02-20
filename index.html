@@ -22,31 +22,32 @@
             <div class="col-md-8 col-md-offset-2"><img src="img/title.png" /></div>
         </div>
         <p></p>
+
         <div class="row">
-          <div class="col-md-2 pickName" style="text-align: center; background-color:lavender;">1.山下智久</div>
-          <div class="col-md-2 pickName" style="text-align: center; background-color:rgb(233, 218, 133);">2.彭于晏</div>
-          <div class="col-md-2 pickName" style="text-align: center; background-color:lavender;">3.孔劉</div>
-          <div class="col-md-2 pickName" style="text-align: center; background-color:rgb(233, 218, 133);">4.鹿晗</div>
-          <div class="col-md-2 pickName" style="text-align: center; background-color:lavender;">5.陳偉霆</div>
-          <div class="col-md-2 pickName" style="text-align: center; background-color:rgb(233, 218, 133);">6.金城武</div>
+            <div class="col-md-2 pickName" style="text-align: center; background-color:lavender;">1.山下智久</div>
+            <div class="col-md-2 pickName" style="text-align: center; background-color:rgb(233, 218, 133);">2.彭于晏</div>
+            <div class="col-md-2 pickName" style="text-align: center; background-color:lavender;">3.孔劉</div>
+            <div class="col-md-2 pickName" style="text-align: center; background-color:rgb(233, 218, 133);">4.鹿晗</div>
+            <div class="col-md-2 pickName" style="text-align: center; background-color:lavender;">5.陳偉霆</div>
+            <div class="col-md-2 pickName" style="text-align: center; background-color:rgb(233, 218, 133);">6.金城武</div>
+        </div>
+
+        <div class="row" style="text-align: center;">
+            <div class="col-md-2 text-center" v-bind:style="{ color: isWinner.n1}" style="background-color:lavender;"><h2>{{randomNum.n1}}</h2></div>
+            <div class="col-md-2 text-center" v-bind:style="{ color: isWinner.n2}" style="background-color:rgb(233, 218, 133);"><h2>{{randomNum.n2}}</h2></div>
+            <div class="col-md-2 text-center" v-bind:style="{ color: isWinner.n3}" style="background-color:lavender;"><h2>{{randomNum.n3}}</h2></div>
+            <div class="col-md-2 text-center" v-bind:style="{ color: isWinner.n4}" style="background-color:rgb(233, 218, 133);"><h2>{{randomNum.n4}}</h2></div>
+            <div class="col-md-2 text-center" v-bind:style="{ color: isWinner.n5}" style="background-color:lavender;"><h2>{{randomNum.n5}}</h2></div>
+            <div class="col-md-2 text-center" v-bind:style="{ color: isWinner.n6}" style="background-color:rgb(233, 218, 133);"><h2>{{randomNum.n6}}</h2></div>
         </div>
         
         <div class="row" style="text-align: center; background-color:rgb(160, 252, 175);">
-            <div class="col-md-2 text-center" v-bind:style="{ color: isWinner.n1}"><h2>{{randomNum.n1}}</h2></div>
-            <div class="col-md-2 text-center" v-bind:style="{ color: isWinner.n2}"><h2>{{randomNum.n2}}</h2></div>
-            <div class="col-md-2 text-center" v-bind:style="{ color: isWinner.n3}"><h2>{{randomNum.n3}}</h2></div>
-            <div class="col-md-2 text-center" v-bind:style="{ color: isWinner.n4}"><h2>{{randomNum.n4}}</h2></div>
-            <div class="col-md-2 text-center" v-bind:style="{ color: isWinner.n5}"><h2>{{randomNum.n5}}</h2></div>
-            <div class="col-md-2 text-center" v-bind:style="{ color: isWinner.n6}"><h2>{{randomNum.n6}}</h2></div>
-        </div>
-
-        <div class="row" style="text-align: center; background-color:rgb(160, 252, 175);">
-            <div class="col-md-2"><img src="img/n1.jpg" width="100%" /></div>
-            <div class="col-md-2"><img src="img/n2.jpg" width="100%" /></div>
-            <div class="col-md-2"><img src="img/n3.jpg" width="100%" /></div>
-            <div class="col-md-2"><img src="img/n4.jpg" width="100%" /></div>
-            <div class="col-md-2"><img src="img/n5.jpg" width="100%" /></div>
-            <div class="col-md-2"><img src="img/n6.jpg" width="100%" /></div>
+            <div class="col-md-2" style="background-color:lavender;"><img src="img/n1.jpg" width="100%" /></div>
+            <div class="col-md-2" style="background-color:rgb(233, 218, 133);"><img src="img/n2.jpg" width="100%" /></div>
+            <div class="col-md-2" style="background-color:lavender;"><img src="img/n3.jpg" width="100%" /></div>
+            <div class="col-md-2" style="background-color:rgb(233, 218, 133);"><img src="img/n4.jpg" width="100%" /></div>
+            <div class="col-md-2" style="background-color:lavender;"><img src="img/n5.jpg" width="100%" /></div>
+            <div class="col-md-2" style="background-color:rgb(233, 218, 133);"><img src="img/n6.jpg" width="100%" /></div>
         </div>
     </div>
     <script src="js/home.js"></script>

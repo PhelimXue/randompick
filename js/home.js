@@ -1,12 +1,13 @@
 var myObject = new Vue({
     el: '#app',
     data: {
+        message: "hahaha",
         intervalId: {n1:null,n2:null,n3:null,n4:null,n5:null,n6:null},
-        randomNum: {n1:'',n2:'',n3:'',n4:'',n5:'',n6:''},
+        randomNum: {n1:'0',n2:'0',n3:'0',n4:'0',n5:'0',n6:'0'},
         isWinner: {n1:'black',n2:'black',n3:'black',n4:'black',n5:'black',n6:'black'}
     },
     created: function () {
-        window.addEventListener('keydown', this.onkey)
+        window.addEventListener('keydown', this.onkey);
       },
     methods: {
         onkey(event){
