@@ -3,10 +3,14 @@
     font-weight:bold;
 }
 .score {
-    font-size: xx-large;
+    font-size: 40px;
     font-weight:bold;
     font-family: fantasy;
 }
 [v-cloak]{
     display: none;
 }
+.nopadding {
+    padding: 3px !important;
+    margin: 0 !important;
+ }
